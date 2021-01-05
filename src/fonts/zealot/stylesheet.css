@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Zealot';
+    src: url('ZealotItalic.woff2') format('woff2'),
+        url('ZealotItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot Expanded';
+    src: url('ZealotExpanded.woff2') format('woff2'),
+        url('ZealotExpanded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot College';
+    src: url('ZealotCollegeItalic.woff2') format('woff2'),
+        url('ZealotCollegeItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot Expanded';
+    src: url('ZealotExpandedItalic.woff2') format('woff2'),
+        url('ZealotExpandedItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot College';
+    src: url('ZealotCollege.woff2') format('woff2'),
+        url('ZealotCollege.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot';
+    src: url('Zealot.woff2') format('woff2'),
+        url('Zealot.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot Leftalic';
+    src: url('ZealotLeftalic.woff2') format('woff2'),
+        url('ZealotLeftalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot Outline';
+    src: url('ZealotOutlineItalic.woff2') format('woff2'),
+        url('ZealotOutlineItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot';
+    src: url('ZealotLight.woff2') format('woff2'),
+        url('ZealotLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot';
+    src: url('ZealotLightItalic.woff2') format('woff2'),
+        url('ZealotLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zealot Outline';
+    src: url('ZealotOutline.woff2') format('woff2'),
+        url('ZealotOutline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

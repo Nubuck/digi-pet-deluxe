@@ -1,0 +1,167 @@
+.pet {
+  position: relative;
+  display: block;
+  width: 542px;
+  height: 474px;
+}
+
+@keyframes moveX {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -5440px;
+  }
+}
+
+.pet-idle {
+  background-image: url(/img/cat-idle.png);
+  animation: moveX 1s steps(10) infinite;
+}
+
+.pet-hurt {
+  background-image: url(/img/cat-hurt.png);
+  animation: moveX 1s steps(10) infinite;
+}
+
+.pet-walk {
+  background-image: url(/img/cat-walk.png);
+  animation: moveX 1s steps(10) infinite;
+}
+
+.pet-sleep {
+  background-image: url(/img/cat-sleep.png);
+  animation: moveX 1s steps(10) infinite;
+}
+
+@keyframes moveXLg {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -5580px;
+  }
+}
+
+.pet-dead {
+  width: 542px;
+  height: 506px;
+  background-image: url(/img/cat-dead.png);
+  animation: moveXLg 1s steps(10) 1;
+}
+
+@keyframes moveXSm {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -4352px;
+  }
+}
+
+.pet-run {
+  background-image: url(/img/cat-run.png);
+  animation: moveXSm 1s steps(8) infinite;
+}
+
+.pet-jump {
+  background-image: url(/img/cat-jump.png);
+  animation: moveXSm 1s steps(8) infinite;
+}
+
+.pet-feed {
+  background-image: url(/img/cat-jump.png);
+  animation: moveXSm 1s steps(8) 1;
+}
+
+.screen {
+  background-image: url(/img/bg-grass1.jpg);
+  background-size: cover;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  wight: 100%;
+  background: rgb(37, 182, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 182, 195, 0.7819502801120448) 0%,
+    rgba(0, 212, 255, 0) 77%
+  );
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: initial;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.heading {
+  font-family: "Zealot College";
+  font-style: italic;
+  font-size: 76px;
+  color: #ff217c;
+  margin-bottom: 10px;
+}
+
+button.action {
+  outline: 0;
+  display: flex;
+  flex-direction: row;
+  flex: initial;
+  flex-wrap: no-wrap;
+  font-family: "Zealot";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  border: 5px solid #0cffe1;
+  border-radius: 100px;
+  color: #0cffe1;
+  padding: 10px 20px 15px 20px;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+  cursor: pointer;
+}
+button.action:disabled {
+  cursor: not-allowed;
+}
+button.action .icon {
+  padding-right: 10px;
+}
+button.action .icon path {
+  fill: #0cffe1;
+  fill-opacity: 1;
+}
+button.action:hover,
+button.action:focus {
+  color: #fff;
+  background-color: #0cffe1;
+  border: 5px solid #0cffe1;
+}
+button.action:active {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 5px solid #0cffe1;
+}
+button.action:hover .icon path,
+button.action:focus .icon path,
+button.action:active .icon path {
+  fill: #fff;
+}
