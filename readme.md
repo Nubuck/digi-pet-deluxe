@@ -2,9 +2,9 @@
 
 ## Getting started
 
-Clone this repo and open a terminal session at the folder where this was cloned too.
+Clone this repo and open a terminal session at the folder where this was cloned to.
 
-### installation
+### Installation
 
 This repo has only one dependency and that is [http-server](https://github.com/http-party/http-server) to host the app.
 
@@ -20,7 +20,7 @@ with yarn:
 $your-folder> yarn install
 ```
 
-### running
+### Running
 
 Once installed run the start command in your respective cli
 
@@ -37,6 +37,21 @@ $your-folder> yarn start
 ```
 
 Once started open your [localhost](http://127.0.0.1:8080/) on port 8080
+
+## Deployment on Netlify
+- Sign up for a free [Netlify] account
+- Click "New site from Git" button
+- Click "GitHub" button
+- You will be redirected to GitHub where you may have to login, then authorize the Netlify app
+- Select the digipet repo
+- Build settings should be populated from [netlify.toml]
+- Click "Deploy Site"
+- Once deployed you will see a link to the site near the top of the page!
+- You can rename your netlify subdomain, or attach a custom domain
+- Changes that you push to GitHub will now get automagically deployed
+
+[netlify]: https://www.netlify.com
+[netlify.toml]: ./netlify.toml
 
 ## Architecture
 

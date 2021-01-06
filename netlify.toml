@@ -1,0 +1,4 @@
+[build]
+base = "/"
+publish = "src/"
+command = "echo digipet deploy!"
