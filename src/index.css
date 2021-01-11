@@ -118,6 +118,10 @@
   margin-bottom: 10px;
 }
 
+.hide {
+  display: none !important;
+}
+
 button.action {
   outline: 0;
   display: flex;

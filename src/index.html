@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="/marx.min.css" />
     <link rel="stylesheet" href="/fonts/zealot/stylesheet.css" />
     <link rel="stylesheet" href="/index.css" />
-
   </head>
 
   <body class="screen">
     <div class="app">
       <div class="heading">Digi-pet deluxe</div>
       <div class="row">
-        <div class="col">
+        <div id="buttonBox" class="col hide">
           <button id="actionFeed" type="button" class="action">
             <div class="icon">
               <svg
@@ -100,7 +99,7 @@
             <div>Reset</div>
           </button>-->
         </div>
-        <div id="spritePet" class="pet pet-idle"></div>
+        <div id="spritePet" class="pet hide"></div>
       </div>
     </div>
     <script src="/lib.js"></script>

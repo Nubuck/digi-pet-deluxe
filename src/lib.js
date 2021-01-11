@@ -91,6 +91,7 @@ const createStateStore = (
 const getElements = () => {
   return {
     pet: z.el("spritePet"),
+    buttons: z.el("buttonBox"),
     actions: {
       feed: z.el("actionFeed"),
       walk: z.el("actionWalk"),
@@ -109,3 +110,15 @@ const onDomReady = (fn) => {
     document.addEventListener("DOMContentLoaded", fn);
   }
 };
+
+const preload = (src) =>
+  new Promise(function (resolve, reject) {
+    const img = new Image();
+    img.onload = function () {
+      resolve(img);
+    };
+    img.onerror = reject;
+    img.src = src;
+  });
+
+const preloadAll = (sources) => Promise.all(sources.map(preload));

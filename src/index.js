@@ -6,8 +6,28 @@ const petDelays = {
 
 // initialize ui + state management libs
 const main = async () => {
+  const sources = [
+    // "https://i.picsum.photos/id/1000/5626/3635.jpg",
+    // "https://i.picsum.photos/id/10/2500/1667.jpg",
+    // "https://homepages.cae.wisc.edu/~ece533/images/cat.png",
+    // "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
+    "/img/bg-grass1.jpg",
+    "/img/cat-idle.png",
+    "/img/cat-hurt.png",
+    "/img/cat-walk.png",
+    "/img/cat-sleep.png",
+    "/img/cat-dead.png",
+    "/img/cat-run.png",
+    "/img/cat-jump.png"
+
+  ];
+
+  await preloadAll(sources);
+
   // setup elements
   const els = getElements();
+  els.buttons.className = 'col'
+  els.pet.className = 'pet pet-idle'
   const toggleButtonsDisabled = (val) => {
     Object.keys(els.actions).forEach((actionKey) => {
       const action = els.actions[actionKey];
